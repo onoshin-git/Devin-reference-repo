@@ -1,0 +1,11 @@
+title: Devin Reference Repository
+description: Devin に渡す handoff 設計の参考用リポジトリ
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

@@ -1,0 +1,31 @@
+{
+  "document": "data-contract-stub",
+  "note": "This file is reference only and not authoritative.",
+  "tables": [
+    {
+      "name": "UsersTable",
+      "keys": {
+        "PK": "USER#{user_id}"
+      },
+      "required_attributes": [
+        "user_id",
+        "password",
+        "attribute"
+      ]
+    },
+    {
+      "name": "ProgressTable",
+      "keys": {
+        "PK": "SESSION#{session_id}",
+        "SK": "PROGRESS or TIMER#{level}#STEP#{step}"
+      }
+    },
+    {
+      "name": "ResultsTable",
+      "keys": {
+        "PK": "SESSION#{session_id}",
+        "SK": "RESULT#{level}"
+      }
+    }
+  ]
+}

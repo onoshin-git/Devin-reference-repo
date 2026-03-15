@@ -1,0 +1,9 @@
+flowchart LR
+    User["利用者"] --> Frontend["Frontend"]
+    Admin["管理者"] --> Frontend
+    Frontend --> APIGW["API Gateway"]
+    APIGW --> Lambda["Lambda Handlers"]
+    Lambda --> Users["DynamoDB UsersTable"]
+    Lambda --> Progress["DynamoDB ProgressTable"]
+    Lambda --> Results["DynamoDB ResultsTable"]
+    Lambda --> Bedrock["Amazon Bedrock"]

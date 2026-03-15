@@ -1,0 +1,21 @@
+{
+  "document": "test-contract-stub",
+  "note": "This file is reference only and not authoritative.",
+  "must_cover": {
+    "unit": [
+      "auth",
+      "generate",
+      "grade",
+      "complete",
+      "gate",
+      "timer"
+    ],
+    "frontend_parity": [
+      "login redirect",
+      "index gate rendering",
+      "lv1 progression",
+      "history rendering",
+      "admin export interaction"
+    ]
+  }
+}

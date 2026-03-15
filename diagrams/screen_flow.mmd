@@ -1,0 +1,14 @@
+stateDiagram-v2
+    [*] --> Login
+    Login --> Index: 認証成功
+    Index --> Lv1
+    Lv1 --> Index
+    Index --> Lv2
+    Lv2 --> Index
+    Index --> Lv3
+    Lv3 --> Index
+    Index --> Lv4
+    Lv4 --> Index
+    Index --> History
+    Index --> Settings
+    Index --> Admin: 管理者のみ

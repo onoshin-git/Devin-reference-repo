@@ -1,0 +1,9 @@
+flowchart LR
+    Dev["開発者 / Devin"] --> Backend["Backend deploy"]
+    Dev --> Frontend["Frontend publish"]
+    Backend --> Seed["Seed users"]
+    Frontend --> Config["config.js 更新"]
+    Note["frontend publish と backend deploy は分離"]:::warn
+    Backend -.-> Note
+    Frontend -.-> Note
+    classDef warn fill:#ffe7c2,stroke:#cc7a00,color:#2d1d00

@@ -1,0 +1,27 @@
+{
+  "document": "api-contract-stub",
+  "note": "This file is reference only and not authoritative.",
+  "endpoints": [
+    {
+      "path": "/auth/login",
+      "method": "POST",
+      "request": {
+        "required": [
+          "user_id",
+          "password"
+        ]
+      },
+      "response": {
+        "success": [
+          "success",
+          "user_id",
+          "attribute"
+        ],
+        "error": [
+          "error_code",
+          "message"
+        ]
+      }
+    }
+  ]
+}
